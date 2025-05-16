@@ -55,7 +55,7 @@ Brute-force attack.
 
 ### Step 4: [Cleanup]
 1.  Well we found the key
-2.  `sudo airmon-ng stop wlan0mon` and `sudo systemctl restart NetworkManager`
+2.  `sudo airmon-ng stop wlan0` and `sudo sservice NetworkManager restart`
      * Example: ![Network Restored](images/restored.png)
 
         
