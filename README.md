@@ -40,7 +40,8 @@ Instructions for any initial setup:
     * Example: ![Handshake Capture](images/handshake.png)
 2.  (Optional) Deauthenticating a client to speed up handshake capture.
     * `sudo aireplay-ng --deauth 0 -a [BSSID] wlan0`
-        * Example: ![Deauth Attack](images/deauth.png)
+        * Example:
+        * ![Deauth Attack](images/deauth.png)
 
 ### Step 3: Cracking the Password
 Brute-force attack.
