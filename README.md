@@ -23,9 +23,9 @@ Instructions for any initial setup:
 2.  Ensuring your wireless adapter is recognized and can be put into monitor mode.
     * `ifconfig`
     * `ifconfig [wireless interface, eg wlan0]`
-      ![Monitor Mode Activation](images/ifconfig.png)
+       * Example: ![Monitor Mode Activation](images/ifconfig.png)
     * `sudo airmon-ng start wlan0`
-       ![Monitor Mode Activation](images/monitor_mode.png)
+       * Example: ![Monitor Mode Activation](images/monitor_mode.png)
 
 ## Tutorial Steps
 
@@ -45,7 +45,7 @@ Instructions for any initial setup:
 ### Step 3: Cracking the Password
 Brute-force attack.
 1.  Using Aircrack-ng with a wordlist:
-    *`aircrack-ng [capturefile.cap] -w [path to wordlist]`).
+    *`aircrack-ng [capturefile.cap] -w [path to wordlist]`.
     * Example: ![Aircrack Success](images/aircrack.png)
 
 
