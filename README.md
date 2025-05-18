@@ -7,6 +7,7 @@ Read that first.
 
 **Disclaimer:** *This tutorial is for educational purposes only. Attempting to crack Wi-Fi networks for which you do not have explicit permission is illegal and unethical. Always respect privacy and operate within legal boundaries.*
 
+
 ## Prerequisites
 List what the user needs before they start:
 * **Hardware:**
