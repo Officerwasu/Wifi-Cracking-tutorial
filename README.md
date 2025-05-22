@@ -11,7 +11,7 @@ Read that first.
 ## Prerequisites
 List what the user needs before they start:
 * **Hardware:**
-    * Wireless network adapter capable of monitor mode and packet injection.  
+    * Wireless network adapter capable of monitor mode and packet injection.   
 * **Software:**
     * Any linux distro with sudo permissions.
     * aircrack-ng suite
