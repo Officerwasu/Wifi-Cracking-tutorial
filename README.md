@@ -12,7 +12,7 @@ Read that first.
 List what the user needs before they start:
 * **Hardware:**
     * Wireless network adapter capable of monitor mode and packet injection.   
-* **Software:**
+* **Software:** 
     * Any linux distro with sudo permissions.
     * aircrack-ng suite
 
